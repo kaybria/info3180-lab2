@@ -1,0 +1,42 @@
+{% extends "base.html"%}
+{%block main%}
+<body>
+    <div class="section">
+        <div class="profile">
+            <div class = "info1">
+                <div class = "top">
+                    <img  src="{{url_for('static', filename='mypic.jpg') }}">
+                    <h1>Kali Soutar</h1>
+                    <p class = "bio"> @KaliBri <br>Portmore, Jamaica <br> {{date_joined}}</p>
+                </div>
+            </div>
+           
+            <div class = 'bio1'>
+                <p> I am Kali Soutar, a Univeristy Student studying Computer Science. This page will include some of my work plus food reviews.</p>
+            </div>
+            <div class ='info'>
+                 <div class = "posts">
+                     <span>25</span>
+                     <p> Posts</p>
+                </div>
+                <div class = "following">
+                     <span>200</span>
+                     <p> Following</p>
+                </div>
+                <div class = "followers">
+                    <span>200</span>
+                    <p> Followers</p>
+                </div>          
+            </div>
+      
+            <div class = ButtonCard>
+                <div class = 'button' >Follow</div>
+            </div>
+    
+        </div>
+    </div>
+    
+    
+</body>
+{% endblock %}
+
